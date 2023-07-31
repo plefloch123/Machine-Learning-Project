@@ -16,5 +16,19 @@
 
 
 # Machine Learning Collection
-In this repository you will find tutorials and projects related to Machine Learning.
+In this repository you will find different projects related to Machine Learning. I used different popular deep learning frameworks such as TensorFlow, Keras or Pytorch.
+
+## Repo Structure
+
+```
+├── Unet_project           <- Semantic segmentation with U-NET implementation from scratch.
+│
+├── dogs_vs_cats           <- Deep neural network classifying image between dogs and cat
+│
+├── Pytorch                <- Many pytroch tutorials
+│
+└── README.md
+```
+
+<br>
 
