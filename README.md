@@ -6,10 +6,7 @@
       <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_d382c4826ad8a3805f72b9df3ab5b56e/keras.png" width="200">
       <br>
       <a href="https://badge.fury.io/py/tensorflow"><img alt="Python" src="https://img.shields.io/pypi/pyversions/tensorflow.svg"></a>
-    </div>
-    <div>
       <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
-      <br>
     </div>
   </div>
 </div>
