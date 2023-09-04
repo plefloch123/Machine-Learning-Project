@@ -25,7 +25,9 @@ In this repository you will find different projects related to Machine Learning.
 │
 ├── dogs_vs_cats           <- Deep neural network classifying image between dogs and cat
 │
-├── Pytorch                <- Many pytroch tutorials
+├── Pytorch                <- Few pytorch tutorials
+│
+├── Pytorch repo           <- Few pytorch projects (FCN,CNN,GANS)
 │
 └── README.md
 ```
