@@ -29,6 +29,8 @@ In this repository you will find different projects related to Machine Learning.
 │
 ├── Pytorch repo           <- Few pytorch projects (FCN,CNN,GANS)
 │
+├── pytorch_lightning      <- Pytorch Lightning projects
+│
 └── README.md
 ```
 
