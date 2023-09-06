@@ -1,8 +1,10 @@
 import torch
 import torch.nn.functional as F
+import torchvision.utils
 from torch import nn, optim
 import pytorch_lightning as pl
 import torchmetrics
+import torchvision
 
 
 class NN(pl.LightningModule):
@@ -23,6 +25,7 @@ class NN(pl.LightningModule):
         return x
 
     def training_step(self, batch, batch_idx):
+        x, y = batch
         loss, scores, y = self._common_step(batch, batch_idx)
         accuracy = self.accuracy(scores, y)
         f1_score = self.f1_score(scores, y)
@@ -36,6 +39,12 @@ class NN(pl.LightningModule):
             on_epoch=True,
             prog_bar=True,
         )
+
+        if batch_idx % 100 == 0:
+            x = x[:8]
+            grid = torchvision.utils.make_grid(x.view(-1, 1, 28, 28))
+            self.logger.experiment.add_image("mnist_images", grid, self.global_step)
+
         return {"loss": loss, "scores": scores, "y": y}
 
     def validation_step(self, batch, batch_idx):

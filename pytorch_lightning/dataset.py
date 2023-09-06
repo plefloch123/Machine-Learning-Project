@@ -3,7 +3,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 from torch.utils.data import random_split
 import pytorch_lightning as pl
-
+from torchvision.transforms import RandomHorizontalFlip, RandomVerticalFlip
 
 class MnistDataModule(pl.LightningDataModule):
     def __init__(self, data_dir, batch_size, num_workers):
